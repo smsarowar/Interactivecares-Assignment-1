@@ -49,3 +49,32 @@ Laravel Blog Project
 ├── vite.config.js
 ├── composer.json
 └── README.md
+```
+
+
+
+## Local Setup Guide
+```bash
+# Clone the project
+git clone https://github.com/username/repo-name.git
+
+# Navigate to project directory
+cd repo-name
+
+# Install PHP dependencies
+composer install
+
+# Install Node.js dependencies (for Tailwind CSS)
+npm install
+
+# Copy .env file and configure your database
+cp .env.example .env
+
+# Generate application key
+php artisan key:generate
+
+# Run migrations 
+php artisan migrate 
+
+# Start local server
+php artisan serve
